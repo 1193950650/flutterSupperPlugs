@@ -67,6 +67,28 @@ class _Home extends State<Home>{
                  child: Text('弹性布局',style: TextStyle(color: Colors.white),),
                ),
                ),
+              ),
+              Container(
+               color: Colors.red,
+                child: InkWell(
+                onTap: (){
+                    Navigator.pushNamed(context,'/18n'); 
+                 },
+                 child: Center(
+                 child: Text('国际化',style: TextStyle(color: Colors.white),),
+               ),
+               ),
+              ),
+              Container(
+               color: Colors.red,
+                child: InkWell(
+                onTap: (){
+                    Navigator.pushNamed(context,'/listView'); 
+                 },
+                 child: Center(
+                 child: Text('电话薄导航',style: TextStyle(color: Colors.white),),
+               ),
+               ),
               )
            ],
          )

@@ -30,68 +30,19 @@ class _Cenglayout extends State<Cenglayout>{
                 fit: StackFit.passthrough,
                 children: <Widget>[
                    Positioned(
-                   left: 130,
-                   top: -10,
+                   left: 30,
+                   top: 0,
                    child: Container(
                      child: Icon(Icons.ac_unit)
                    ),
                  ),
                 Positioned(
-                   left: 130,
+                   left: 30,
                    top: -10,
                    child: Container(
                      child: Icon(Icons.ac_unit)
                    ),
-                 ),
-                  Row(
-                    children: <Widget>[
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          child: Row(
-                            children: <Widget>[
-                              Row(
-                                children: <Widget>[
-                                  Expanded(
-                                    flex: 0,
-                                    child: Container(
-                                      height: 30,
-                                      width: 100,
-                                    ),
-                                  ),
-                                  Expanded(
-                                    flex: 1,
-                                    child: Container(
-                                      height: 30,
-                                      child: Text('aaaaa'),
-                                    ),
-                                  )
-                                ],
-                              ),
-                               Row(
-                                children: <Widget>[
-                                  Expanded(
-                                    flex: 0,
-                                    child: Container(
-                                      height: 30,
-                                      width: 100,
-                                    ),
-                                  ),
-                                  Expanded(
-                                    flex: 1,
-                                    child: Container(
-                                      height: 30,
-                                      child: Text('aaaaa'),
-                                    ),
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
+                 )
                 ],
               ),
             )
