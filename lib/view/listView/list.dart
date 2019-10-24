@@ -12,6 +12,7 @@ class ListViewPage extends StatefulWidget {
 class _ListViewPage extends State<ListViewPage> {
   ScrollController controller = new ScrollController();
   double bashu = 50.0;
+  @override
   Widget listFn() {
     Widget page;
     page = ListView.builder(
@@ -56,7 +57,7 @@ class _ListViewPage extends State<ListViewPage> {
             onTap: (){
               print(int.parse(value['Index']) * bashu);
               controller.animateTo(int.parse(value['Index']) * bashu,
-             duration: Duration(microseconds: 100000), curve: Curves.easeIn);
+              duration: Duration(microseconds: 100000), curve: Curves.easeIn);
             },
             child: Container(
               decoration: BoxDecoration(

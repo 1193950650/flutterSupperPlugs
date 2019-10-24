@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 
 class InterNation extends StatefulWidget{
-
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
@@ -12,19 +12,13 @@ class InterNation extends StatefulWidget{
 }
 
 class _InterNation extends State<InterNation>{
-  String languge = '中文';
   int cont = 0;
-  changeLanguge(int str){
-    this.setState((){
-      cont = str;
-    });
-  }
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter 国际化'),
+        title: Text(FlutterI18n.translate(context, "home.title")),
       ),
       body: Container(
         padding: EdgeInsets.all(10),
@@ -50,9 +44,11 @@ class _InterNation extends State<InterNation>{
                       ]
                     ),
                     child: InkWell(
-                      onTap: changeLanguge(0),
+                      onTap: (){
+                        FlutterI18n.refresh(context,"zh_CN");
+                      },
                       child: Center(
-                      child: Text('简体中文(中国)',style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w900),),
+                      child: Text(FlutterI18n.translate(context, "home.china"),style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w900),),
                     ),
                     ),
                   ),
@@ -79,8 +75,11 @@ class _InterNation extends State<InterNation>{
                       ]
                     ),
                     child: InkWell(
+                      onTap: (){
+                         FlutterI18n.refresh(context,"en_US");
+                      },
                       child: Center(
-                      child: Text('English(Unite States)',style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w900),),
+                      child: Text(FlutterI18n.translate(context, "home.us"),style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w900),),
                     ),
                     )
                   ),
@@ -107,7 +106,7 @@ class _InterNation extends State<InterNation>{
                       ]
                     ),
                     child: Center(
-                      child: Text('粤语(中国香港)',style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w900),),
+                      child: Text(FlutterI18n.translate(context, "home.hokong"),style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w900),),
                     ),
                   ),
                 )
@@ -133,17 +132,12 @@ class _InterNation extends State<InterNation>{
                       ]
                     ),
                     child: Center(
-                      child: Text('繁体(中国台湾)',style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w900),),
+                      child: Text(FlutterI18n.translate(context, "home.taiwan"),style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w900),),
                     ),
                   ),
                 )
               ],
             ),
-          
-                 Container(
-                  child: Text('您现在选择的语言是：$languge'),
-                 )
-          
           ],
         ),
       ),

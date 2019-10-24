@@ -1,0 +1,9 @@
+{
+  "home": {
+    "title": "Flutter internationalization",
+    "china": "Simplified Chinese (China)",
+    "us": "English(Unite States)",
+    "hokong": "Cantonese (Hong Kong, China)",
+    "taiwan": "Traditional (Taiwan, China)"
+  }
+}

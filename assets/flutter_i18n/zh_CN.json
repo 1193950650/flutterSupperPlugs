@@ -1,0 +1,9 @@
+{
+  "home": {
+    "title": "flutter国际化",
+    "china": "简体中文(中国)",
+    "us": "English(Unite States)",
+    "hokong": "粤语(中国香港)",
+    "taiwan": "繁体(中国台湾)"
+  }
+}
