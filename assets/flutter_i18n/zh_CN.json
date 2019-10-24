@@ -1,5 +1,6 @@
 {
   "home": {
+    "home":"首页",
     "title": "flutter国际化",
     "china": "简体中文(中国)",
     "us": "English(Unite States)",

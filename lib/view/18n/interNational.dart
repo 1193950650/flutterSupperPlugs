@@ -46,6 +46,9 @@ class _InterNation extends State<InterNation>{
                     child: InkWell(
                       onTap: (){
                         FlutterI18n.refresh(context,"zh_CN");
+                        this.setState((){
+                          cont = 1;
+                        });
                       },
                       child: Center(
                       child: Text(FlutterI18n.translate(context, "home.china"),style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w900),),
@@ -77,6 +80,9 @@ class _InterNation extends State<InterNation>{
                     child: InkWell(
                       onTap: (){
                          FlutterI18n.refresh(context,"en_US");
+                          this.setState((){
+                            cont = 1;
+                          });
                       },
                       child: Center(
                       child: Text(FlutterI18n.translate(context, "home.us"),style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w900),),

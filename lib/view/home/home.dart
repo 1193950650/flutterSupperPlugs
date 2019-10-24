@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 
 class Home extends StatefulWidget{
   @override
@@ -15,7 +16,7 @@ class _Home extends State<Home>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('LayFlutter'),
+        title: Text(FlutterI18n.translate(context, "home.home")),
       ),
       body: Container(
         padding: EdgeInsets.all(5),

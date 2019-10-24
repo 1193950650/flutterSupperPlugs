@@ -1,5 +1,6 @@
 {
   "home": {
+    "home":"home",
     "title": "Flutter internationalization",
     "china": "Simplified Chinese (China)",
     "us": "English(Unite States)",
