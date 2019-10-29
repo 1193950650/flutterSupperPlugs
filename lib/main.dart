@@ -5,10 +5,12 @@ import 'package:layflutter/view/18n/interNational.dart';
 import 'package:layflutter/view/cengLayout/index.dart';
 import 'package:layflutter/view/flexLayout/index.dart';
 import 'package:layflutter/view/home/home.dart';
+import 'package:layflutter/view/http/http.dart';
 import 'package:layflutter/view/lineLayout/index.dart';
 import 'package:layflutter/view/listView/list.dart';
 import 'package:layflutter/view/liuLayout/index.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:layflutter/view/stoken/index.dart';
 
 void main() {
   runApp(App());
@@ -35,6 +37,8 @@ class App extends StatelessWidget{
         '/liuLayout':( BuildContext context)=> new LiuLayout(),
         '/18n':( BuildContext context)=> new InterNation(),
         '/listView':( BuildContext context)=> new ListViewPage(),
+        '/httpPage':(BuildContext context) => new HttpModel(),
+        '/stoken':(BuildContext context) => new MyShimmer()
       },
     );
   }

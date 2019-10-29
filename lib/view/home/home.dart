@@ -90,6 +90,28 @@ class _Home extends State<Home>{
                  child: Text('电话薄导航',style: TextStyle(color: Colors.white),),
                ),
                ),
+              ),
+              Container(
+               color: Colors.red,
+                child: InkWell(
+                onTap: (){
+                    Navigator.pushNamed(context,'/httpPage'); 
+                 },
+                 child: Center(
+                 child: Text('数据请求',style: TextStyle(color: Colors.white),)
+               ),
+               ),
+              ),
+               Container(
+               color: Colors.red,
+                child: InkWell(
+                onTap: (){
+                    Navigator.pushNamed(context,'/stoken'); 
+                 },
+                 child: Center(
+                 child: Text('骨架屏',style: TextStyle(color: Colors.white),)
+               ),
+               ),
               )
            ],
          )

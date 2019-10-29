@@ -26,6 +26,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   indexed_list_view: ^1.0.7
   flutter_i18n: ^0.5.2
+  shimmer: ^1.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
